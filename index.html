@@ -1,30 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Framer Website</title>
+  <title>Responsive iframe test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
-    html, body {
+    body, html {
       margin: 0; padding: 0; height: 100%;
-      overflow: hidden;
-      /* Optional: ensure body fills viewport */
-      width: 100vw;
-      height: 100vh;
     }
-
     .responsive-iframe-container {
       position: relative;
       width: 100%;
-      height: 100%;
-      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      padding-bottom: 56.25%; /* 16:9 */
+      height: 0;
       overflow: hidden;
     }
-
     .responsive-iframe-container iframe {
       position: absolute;
       top: 0; left: 0;
       width: 100%;
       height: 100%;
-      border: none;
+      border: 0;
     }
   </style>
 </head>
